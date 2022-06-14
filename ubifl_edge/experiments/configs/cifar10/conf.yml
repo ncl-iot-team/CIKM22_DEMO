@@ -8,7 +8,7 @@ communication:
 
 device:
     ps_ip: 19scomps001.ncl.ac.uk # Parameter server IP address.
-    num_of_clients: 5
+    num_of_clients: 2
     client_fraction: 1 # C fraction, 0 means 1 mqtt_client, 1 means total clients
     client_sample_mode: random
     this_rank: 0
