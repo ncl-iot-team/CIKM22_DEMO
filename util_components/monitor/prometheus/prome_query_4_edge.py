@@ -35,7 +35,7 @@ class PrometheusQuery4Edge(PrometheusClient):
         Note: iot_executor is the name of image of executor deployment
         :return:
         """
-        expr = "container_start_time_seconds{image='iot_executor'}"
+        expr = "container_start_time_seconds{image=~'.*iot_executor'}"
         for _ in range(self.retry_times):
             res = self.extract_result(self.query_by_expr(expr))
             if res is not None:
